@@ -1,0 +1,22 @@
+create table student(
+     stu_id int primary key,
+     s_name varchar(30),
+     department text);
+describe student;#describe the column
+alter table student add ph_no varchar(10);
+     #adds a new column
+alter table student drop column department;
+     #delete a specific column
+drop table student;#delete a table
+#insert values one by one
+insert into student values(1,"aaa","111111111");
+insert into student values  (2,"bbb","222222222");
+#insert values as group
+insert into student values
+     (3,"ccc","311111111"),
+     (4,"ddd","411111111"),
+     (5,"eee","511111111");
+insert into student(stu_id,s_name)value(6,"fff");
+insert into student(s_name)values("ggg");
+select*from student;
+select stu_id,s_name from student;
